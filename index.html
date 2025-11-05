@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>Verdisol Agro Pvt Ltd</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,18 +18,30 @@
     <img src="https://picsum.photos/450/600?random=5" class="mb-img" style="top:80%; left:40%; width:190px;">
   </div>
 
-
-
-    <!-- HEADER / HERO -->
+  <!-- HEADER / HERO -->
   <header id="hero">
       <div class="hero-content">
+          <img src="images/verdisol-logo.svg" alt="verdisol-logo">
           <h1>Revolutionizing Farming with Drone Technology</h1>
           <p>Precision agriculture and water mapping for smarter farming and development.</p>
-          <a href="#contact" class="btn">Book a Consultation</a>
+          <a href="#contact" class="btn" id="book-consultation-btn">Book a Consultation</a>
       </div>
   </header>
 
-    <!-- ABOUT US -->
+  <!-- SEARCH BAR -->
+  <section id="search-section">
+    <div class="search-wrapper">
+      <input 
+        type="text" 
+        id="site-search" 
+        placeholder="Search our services & FAQs..." 
+        aria-label="Search site content">
+      <button id="search-btn" aria-label="Search">🔍</button>
+    </div>
+  </section>
+
+
+  <!-- ABOUT US -->
   <section id="about">
     <h2>About Us</h2>
     <p><strong>Verdisol Agro Pvt Ltd</strong>  we are redefining farming through innovation, science, and precision.
@@ -52,148 +65,188 @@
       </ul>
   </section>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-card">
-                <h3>Scientific Land-Use & Management Planning</h3>
-                <p>
-                  We transform your farm into a blueprint for success.
-                  Using drone mapping, soil analysis, and spatial planning,
-                  our team develops comprehensive land-use plans that maximize every hectare’s potential.<br>
-                  From field layout and irrigation design to crop zoning and infrastructure placement,
-                  every decision is guided by science — ensuring higher yields, lower waste, and sustainable land stewardship.
-                </p>
-            </div>
-            <div class="service-card">
-                <h3>Drone-Based Underground Water Surveys</h3>
-                <p>
-                  Eliminate the guesswork and find water with precision.
-                  Our drone-powered geophysical surveys use advanced sensors
-                  to detect underground water sources and aquifer patterns before drilling begins.
-                  This technology minimizes costly trial-and-error drilling, providing reliable
-                  data that ensures your investment in boreholes and irrigation systems is well-informed and efficient.
-                </p>
-            </div>
-            <div class="service-card">
-                <h3>Rural Development</h3>
-                <p>
-                  We believe that agriculture should grow communities, not just crops.
-                  VerdiSol Agro partners with local authorities, NGOs, and investors to design and implement sustainable rural development models.
-                  From agricultural zoning and resource mapping to infrastructure planning and training, we help build thriving, self-sustaining rural ecosystems powered by smart technology and community engagement.
-                </p>
-            </div>
-            <div class="service-card">
-                <h3>Farmer Training & Capacity Building</h3>
-                <p>
-                  Empowering farmers is at the heart of what we do.
-                  Our training programs blend practical fieldwork with cutting-edge knowledge in
-                  climate-smart agriculture, precision farming, and agribusiness management.<br>
-                  Through workshops, demonstrations, and digital learning, we help farmers
-                  transition from traditional practices to modern, data-informed farming that improves
-                  productivity and resilience.
-                </p>
-            </div>
-            <div class="service-card">
-                <h3>Farm Staffing Solutions</h3>
-                <p>
-                  We connect you with the people who grow success.
-                  VerdiSol Agro provides end-to-end farm staffing and management solutions,
-                  sourcing and training skilled personnel to meet your operational needs.<br>
-                  Whether you require farm managers, agronomists, or seasonal laborers, we ensure
-                  every team member is equipped with the technical expertise and discipline to deliver results.
-                </p>
-            </div>
-            <div class="service-card">
-                <h3>Agro-Tourism</h3>
-                <p>
-                  Experience the beauty and innovation of agriculture.
-                  Our agro-tourism initiatives showcase farms as hubs of learning, leisure, and inspiration.<br>
-                  Visitors can engage in farm tours, agricultural demonstrations, and
-                  eco-friendly experiences that highlight Zimbabwe’s natural richness and modern agricultural excellence.<br>
-                  We help farms create unforgettable destinations that connect people to the land — and to the future of farming.
-                </p>
-            </div>
-            <div class="service-card">
-                <p>
-                  At VerdiSol Agro, we’re not just providing services — we’re building smarter farms,
-                  empowered farmers, and sustainable rural futures.
-                  VerdiSol Agro — Redefining Farming. Empowering Growth. Inspiring Change.
-                </p>
-            </div>
+  <!-- SERVICES -->
+  <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-card">
+              <h3>Scientific Land-Use & Management Planning</h3>
+              <p>
+                We transform your farm into a blueprint for success.
+                Using drone mapping, soil analysis, and spatial planning,
+                our team develops comprehensive land-use plans that maximize every hectare’s potential.<br>
+                From field layout and irrigation design to crop zoning and infrastructure placement,
+                every decision is guided by science — ensuring higher yields, lower waste, and sustainable land stewardship.
+              </p>
+          </div>
+          <div class="service-card">
+              <h3>Drone-Based Underground Water Surveys</h3>
+              <p>
+                Eliminate the guesswork and find water with precision.
+                Our drone-powered geophysical surveys use advanced sensors
+                to detect underground water sources and aquifer patterns before drilling begins.
+                This technology minimizes costly trial-and-error drilling, providing reliable
+                data that ensures your investment in boreholes and irrigation systems is well-informed and efficient.
+              </p>
+          </div>
+          <div class="service-card">
+              <h3>Rural Development</h3>
+              <p>
+                We believe that agriculture should grow communities, not just crops.
+                VerdiSol Agro partners with local authorities, NGOs, and investors to design and implement sustainable rural development models.
+                From agricultural zoning and resource mapping to infrastructure planning and training, we help build thriving, self-sustaining rural ecosystems powered by smart technology and community engagement.
+              </p>
+          </div>
+          <div class="service-card">
+              <h3>Farmer Training & Capacity Building</h3>
+              <p>
+                Empowering farmers is at the heart of what we do.
+                Our training programs blend practical fieldwork with cutting-edge knowledge in
+                climate-smart agriculture, precision farming, and agribusiness management.<br>
+                Through workshops, demonstrations, and digital learning, we help farmers
+                transition from traditional practices to modern, data-informed farming that improves
+                productivity and resilience.
+              </p>
+          </div>
+          <div class="service-card">
+              <h3>Farm Staffing Solutions</h3>
+              <p>
+                We connect you with the people who grow success.
+                VerdiSol Agro provides end-to-end farm staffing and management solutions,
+                sourcing and training skilled personnel to meet your operational needs.<br>
+                Whether you require farm managers, agronomists, or seasonal laborers, we ensure
+                every team member is equipped with the technical expertise and discipline to deliver results.
+              </p>
+          </div>
+          <div class="service-card">
+              <h3>Agro-Tourism</h3>
+              <p>
+                Experience the beauty and innovation of agriculture.
+                Our agro-tourism initiatives showcase farms as hubs of learning, leisure, and inspiration.<br>
+                Visitors can engage in farm tours, agricultural demonstrations, and
+                eco-friendly experiences that highlight Zimbabwe’s natural richness and modern agricultural excellence.<br>
+                We help farms create unforgettable destinations that connect people to the land — and to the future of farming.
+              </p>
+          </div>
+          <div class="service-card">
+              <p>
+                At VerdiSol Agro, we’re not just providing services — we’re building smarter farms,
+                empowered farmers, and sustainable rural futures.
+                VerdiSol Agro — Redefining Farming. Empowering Growth. Inspiring Change.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why">
+      <h2>Why Choose Us</h2>
+      <p>We’re redefining how data transforms agriculture — with reliable results and practical solutions farmers can trust.</p>
+      <ul class="benefits">
+          <li>High-accuracy results backed by advanced drone mapping</li>
+          <li>Cost-effective mobile survey solutions</li>
+          <li>Expert team experienced in African and international terrains</li>
+          <li>Faster borehole identification and water yield optimization</li>
+          <li>Personalized support and clear reporting</li>
+      </ul>
+      <blockquote>“Their drone survey helped us locate a clean water source faster than any traditional method — saved us weeks.” <br>— A satisfied client, Masvingo Region</blockquote>
+  </section>
+
+  <div class="flyer-wrapper">
+      <h3 class="flyer-heading">Products</h3>
+      <img src="images/flyer.jpg" alt="Verdisol Agro Flyer" class="flyer">
+  </div>
+
+  <!-- BLOG SECTION -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <article class="blog-post">
+      <h3 class="blog-title">Crop awareness</h3>
+      <p class="blog-date">October 21, 2025</p>
+      <p class="blog-preview">
+        did you know you cant grow crops in winter??
+      </p>
+      <a href="#" class="read-more">Read More →</a>
+    </article>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="https://formsubmit.co/tblessingw0t@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone">
+        <textarea name="message" placeholder="Your message..." required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div id="popup-overlay">
+        <div class="popup-box">
+          <p>✅ Message sent successfully!</p>
         </div>
-    </section>
+      </div>
 
-    <!-- WHY CHOOSE US -->
-    <section id="why">
-        <h2>Why Choose Us</h2>
-        <p>We’re redefining how data transforms agriculture — with reliable results and practical solutions farmers can trust.</p>
-        <ul class="benefits">
-            <li>High-accuracy results backed by advanced drone mapping</li>
-            <li>Cost-effective mobile survey solutions</li>
-            <li>Expert team experienced in African and international terrains</li>
-            <li>Faster borehole identification and water yield optimization</li>
-            <li>Personalized support and clear reporting</li>
-        </ul>
-        <blockquote>“Their drone survey helped us locate a clean water source faster than any traditional method — saved us weeks.” <br>— A satisfied client, Masvingo Region</blockquote>
-    </section>
+      <div id="search-popup">
+        <div class="popup-box">
+          <p>😕 We couldn’t find what you’re looking for.<br>
+          Please contact us and we’ll get back to you.</p>
+        </div>
+      </div>
 
-    <div class="flyer-wrapper">
-        <h3 class="flyer-heading">Products</h3>
-        <img src="images/flyer.jpg" alt="Verdisol Agro Flyer" class="flyer">
-    </div>
+      <div class="contact-details">
+          <p><strong>Phone:</strong> +263 78 293 9896</p>
+          <p><strong>Email:</strong> verdisolagro@gmail.com</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/c/263781939896">Chat with us</a></p>
+          <div class="socials">
+              <a href="https://x.com/Tatenda_Agro" target="_blank">@Tatenda_Agro</a>
+          </div>
+      </div>
+  </section>
 
-    <!-- BLOG SECTION -->
-    <section id="blog">
-      <h2>Blog</h2>
-      <article class="blog-post">
-        <h3 class="blog-title">Crop awareness</h3>
-        <p class="blog-date">October 21, 2025</p>
-        <p class="blog-preview">
-          did you know you cant grow crops in winter??
+  <!-- MOST ASKED QUESTIONS -->
+  <section id="faq">
+    <h2>Most Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>How do drone surveys find underground water?</h3>
+        <p>Our drones use sensors that detect variations in soil and subsurface conductivity, helping locate aquifers precisely.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer services outside Zimbabwe?</h3>
+        <p>Yes, Verdisol operates regionally across Southern Africa, adapting technology to local terrains and climate zones.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can small-scale farmers afford your drone services?</h3>
+        <p>Absolutely. We design scalable packages that fit budgets from individual farms to large cooperatives.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the accuracy of your drone-based underground water survey?</h3>
+        <p>Our drone-based water survey delivers an accuracy rate of up to 80%. We provide multiple detection points across your land rather than relying on a single reading, ensuring higher precision. The survey covers the entire property, analyzing geological structures, rock formations, and underground fractures to pinpoint potential water-bearing zones. <br>
+        By combining aerial mapping, geophysical sensors, and advanced data analysis, we identify the most promising borehole sites with minimal environmental disturbance. This approach helps reduce drilling costs and increase the likelihood of successful water discovery.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you provide a report after the survey?</h3>
+        <p>
+          Yes, we do. Each survey includes a comprehensive report featuring a stream analysis map and a water table map. These maps can also be used for farm land-use planning and development. Your full report is delivered within 48 hours from the date of the survey.
         </p>
-        <a href="#" class="read-more">Read More →</a>
-      </article>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formsubmit.co/tblessingw0t@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Phone">
-          <textarea name="message" placeholder="Your message..." required></textarea>
+  <footer>
+      <p>© Verdisol Agro Pvt Ltd 2025. All Rights Reserved.</p>
+      <p class="trademark">Verdisol™ is a registered trademark of Verdisol Agro Pvt Ltd.</p>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+      </div>
+      <p>Email: info@verdisolagro.com</p>
+  </footer>
 
-          <!-- Optional fields -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html">
-
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-
-
-
-        <div class="contact-details">
-            <p><strong>Phone:</strong> +1 555 123 4567</p>
-            <p><strong>Email:</strong> info@verdisolagro.com</p>
-            <p><strong>WhatsApp:</strong> <a href="#">Chat with us</a></p>
-            <div class="socials">
-                <a href="https://x.com/Tatenda_Agro" target="_blank">@Tatenda_Agro</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© Verdisol Agro Pvt Ltd 2025. All Rights Reserved.</p>
-        <p class="trademark">Verdisol™ is a registered trademark of Verdisol Agro Pvt Ltd.</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-        </div>
-        <p>Email: info@verdisolagro.com</p>
-    </footer>
+  <!-- All scripts now external -->
+  <script src="script.js"></script>
 </body>
 </html>
